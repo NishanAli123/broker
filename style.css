@@ -1,0 +1,28 @@
+header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(_69fab89b-5b0d-43df-9044-87a0e4fffa51.jfif);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+/* styles.css */
+.navbar-nav .nav-link, 
+.dropdown-item {
+  font-size: 2rem; /* Adjust this value as needed */
+  font-
+}
+.navbar-nav .nav-item {
+    margin-right: 2rem; /* Add space between navbar items */
+  }
+  .navbar-nav .nav-link {
+    border: 0.5px solid #000000; /* Add border to navbar links */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    padding: 0rem 0rem;/* Optional: Add padding inside the buttons */
+  }
+  .navbar-nav .nav-link:hover {
+    background-color: #f6f6f6; /* Optional: Add a background color on hover */
+  }
+  
+  
