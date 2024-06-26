@@ -1,7 +1,29 @@
 body{
     overflow: scroll;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
+/* WebKit scrollbar styling */
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: yellowgreen; /* Track color */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: white; /* Thumb color */
+    border-radius: 6px; /* Optional: rounded corners */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Thumb color on hover */
+}
+body{
+    scroll-behavior: smooth;
+}
+
 header {
     height: 100vh;
     width: 100vw;
@@ -46,11 +68,17 @@ header::before {
     filter: blur(3px) brightness(0.5); /* Adjust the blur amount as needed */
     background-color: rgba(0, 0, 0, 0.5);
     z-index: -1; /* Ensure the blurred image is behind the content */
+    transition: transform 2s ease; /* Adjust the duration and easing as needed */
 }
-header .content {
+.heading{
     position: relative;
     z-index: 1; /* Ensure the content is above the blurred image */
     overflow-x: hidden;
+    transition: transform 3s ease; /* Adjust the duration and easing as needed */
+
+}
+.heading:hover{
+    transform: scale(1.1);
 }
 /* styles.css */
 .heading{
@@ -117,7 +145,65 @@ header .content {
 }
 
 main{
+    height: 1200px;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+  
+}
+main::before{
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('malappuram.jpg');
+    background-repeat: no-repeat;
+    filter: blur(3px) brightness(0.5);
+    transform: scaleY(-1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: -1;
+
+}
+.who h1{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+.reduced-image{
+    height: 300px;
+    width: 25rem;
+}
+
+.content1 {
     height: 100vh;
     width: 100vw;
-    background-color: black;
 }
+.carousel-inner {
+    width: 100%;
+    max-height: 500px; /* Set a max height for the carousel */
+  }
+.carousel-inner img {
+    width: 100%; /* Adjusts the width of the images */
+    height: 100%; /* Maintains aspect ratio */
+    object-fit: cover;
+  }
+.carousel-item {
+    height: 500px; /* Ensures a consistent height for each carousel item */
+    width: 100%;
+  }
+
+.carousel {
+    max-width: 500px;
+    margin: auto;
+  }
+.who{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
