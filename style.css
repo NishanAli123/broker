@@ -62,6 +62,7 @@ header::before {
     right: 0;
     bottom: 0;
     background-image: url('malappuram.jpg');
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -123,7 +124,7 @@ header::before {
 .floating-whatsapp {
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    left: 30px;
     z-index: 1000; /* Ensure it's above other content */
 }
 .whatsapp-link {
@@ -149,17 +150,18 @@ header::before {
 .main-container{
     font-size: 24px;
     color: white;
-    height: 100vh;
+    height: 150vh;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 .main-header{
-    background-color: red;
+    background-color: rgb(0, 0, 0);
     flex: 0.3 0.3 auto;
+    color: black;
 }
 .main-main{
-    background-color: yellowgreen;
+    background-color: rgb(0, 0, 0);
     flex: 8 8 auto;
     display: flex;
 }
@@ -168,21 +170,25 @@ header::before {
     flex: 0 1 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: start;
     color: black;
-    padding: 0px;
+    justify-content: center;
+    text-align: start;
+    margin-left: 30px;
 
 }
 .center{
-    background-color: violet;
+    background-color: white;
     flex: 1 1 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(e7b4ce09c703210ab8f75b017c7eaf0951c5a95b737ee8120602845c1c1d944b.jfif);
+    background-attachment: fixed;
 }
 .rside{
-    background-color: orange;
+    background-color: rgb(0, 0, 0);
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
@@ -191,8 +197,13 @@ header::before {
     
 }
 .main-footer{
-    background-color: rgb(14, 20, 2);
-    flex: 0.3 0.3 auto;
+    background-color: rgb(0, 0, 0);
+    flex: 10 10 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 30px;
 }
 /*carousal item-----------------------------------*/
 .c-item{
@@ -214,7 +225,7 @@ header::before {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 60px;
 }
 
@@ -228,7 +239,7 @@ header::before {
 
 }
 .counter-container:hover{
-    background: red;
+    color: darkblue;
 }
 
 
@@ -237,5 +248,24 @@ header::before {
         flex-direction: column;
     }
 }
+
+
+.icon-custom{
+    font-size: 2rem; /* Change the size of the icon */
+    color: white;
+}
+.design{
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    font-size: small;
+}
+
+.divider {
+    width: 20px; /* Width of the vertical line */
+    background-color: white; /* Color of the vertical line */
+    height: 100%; /* Height of the divider (adjust as needed) */
+}
+
 
 
