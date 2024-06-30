@@ -96,3 +96,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
     observerForCounter.observe(counterElement); // Observe the counter element
 });
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var myCarousel = document.querySelector('#carouselExampleIndicators');
+    var carousel = new bootstrap.Carousel(myCarousel, {
+      ride: 'carousel',
+      interval: 5000,
+      wrap: true
+    });
+
+    myCarousel.addEventListener('touchstart', function (e) {
+      console.log('Touch start event detected.');
+    });
+
+    myCarousel.addEventListener('touchend', function (e) {
+      console.log('Touch end event detected.');
+    });
+  });
