@@ -81,6 +81,15 @@ header::before {
 .heading:hover{
     transform: scale(1.1);
 }
+
+
+@media all and (max-width:500px){
+    .heading:hover{
+        transform: none;
+    }
+}
+
+
 /* styles.css */
 .heading{
     display: flex;
