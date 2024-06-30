@@ -158,15 +158,21 @@ header::before {
 .main-header{
     background-color: rgb(0, 0, 0);
     flex: 0.3 0.3 auto;
-    color: black;
+    color: transparent;
+    background-image: url(e7b4ce09c703210ab8f75b017c7eaf0951c5a95b737ee8120602845c1c1d944b.jfif);
+    background-attachment: fixed;
+
 }
 .main-main{
     background-color: rgb(0, 0, 0);
     flex: 8 8 auto;
     display: flex;
+    background-image: url(e7b4ce09c703210ab8f75b017c7eaf0951c5a95b737ee8120602845c1c1d944b.jfif);
+    background-attachment: fixed;
+
 }
 .lside{
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     flex: 0 1 auto;
     display: flex;
     flex-direction: column;
@@ -179,16 +185,15 @@ header::before {
 
 }
 .center{
-    background-color: white;
+    background-color: transparent;
     flex: 1 1 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(e7b4ce09c703210ab8f75b017c7eaf0951c5a95b737ee8120602845c1c1d944b.jfif);
     background-attachment: fixed;
 }
 .rside{
-    background-color: rgb(0, 0, 0);
+    background-color: black;
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
@@ -198,7 +203,8 @@ header::before {
 }
 .main-footer{
     background-color: rgb(0, 0, 0);
-    flex: 10 10 auto;
+    height: 1000px;
+    flex: 10 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -214,8 +220,7 @@ header::before {
 }
 .c-slide{
     width: 400px;
-    border: solid black 30px;
-    border-radius: 2px;
+    border: solid black 20px;
 }
 .counter-container {
     display: flex;
@@ -265,6 +270,8 @@ header::before {
     width: 20px; /* Width of the vertical line */
     background-color: white; /* Color of the vertical line */
     height: 100%; /* Height of the divider (adjust as needed) */
+    background-image: url(e7b4ce09c703210ab8f75b017c7eaf0951c5a95b737ee8120602845c1c1d944b.jfif);
+    background-attachment: fixed;
 }
 
 
