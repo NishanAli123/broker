@@ -172,16 +172,17 @@ header::before {
 
 }
 .lside{
-    background-color: transparent;
+    background-color: black;
     flex: 0 1 auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: start;
-    color: black;
+    align-items: center;
+    color: white;
     justify-content: center;
     text-align: start;
-    margin-left: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 
 }
 .center{
@@ -199,6 +200,7 @@ header::before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
     
 }
 .main-footer{
@@ -272,6 +274,18 @@ header::before {
     height: 100%; /* Height of the divider (adjust as needed) */
     background-image: url(e7b4ce09c703210ab8f75b017c7eaf0951c5a95b737ee8120602845c1c1d944b.jfif);
     background-attachment: fixed;
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(100px); /* Adjust as needed */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Animated state */
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
